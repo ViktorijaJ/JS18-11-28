@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1 nr.</title>
+
+    <script src="u1.js" language="JavaScript" type="text/javascript"></script>
+
+</head>
+<body>
+
+<h2>Iveskite skaiciu:</h2>
+<input type="text" id="skaicius" placeholder="Iveskite skaiciu">
+<input type="submit" onclick="funkcija1()">
+<div id="atsakymas"></div>
+
+<script>
+    function funkcija1 () {
+        var a = Number(document.getElementById('skaicius').value);
+        if (a % 2 == 0) {
+            document.getElementById('atsakymas').innerHTML="Lyginis";
+        } else {
+            document.getElementById('atsakymas').innerHTML="Nelyginis";
+        }
+
+    }
+</script>
+
+</body>
+</html>
